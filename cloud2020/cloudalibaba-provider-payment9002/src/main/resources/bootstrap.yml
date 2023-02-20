@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.174.128:1111 #Nacos作为配置中心地址
+        file-extension: yaml #指定yaml格式的配置
+#        group: DEV_GROUP
+#        namespace: 8e7f9984-fffd-42f3-8ef4-6b500702bb8b
+
+
+# ${spring.application.name}-${spring.profile.active}.${spring.cloud.nacos.config.file-extension}
+# nacos-config-client-dev.yaml
+
+# nacos-config-client-test.yaml   ----> config.info
